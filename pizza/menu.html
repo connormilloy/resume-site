@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Pizza Palace Menu</title>
+</head>
+
+<body>
+    <center>
+        <a href="index.html"><img src="./public/logo.png" width="400"></a>
+        <h1>One of Our's</h1>
+        <h3>So you don't want to make your own, that's okay. You've had a hard week.</h3>
+        <h3>Once you've made up your mind, order at the bottom of the page or click <a href="#order">here!</a></h3>
+        <br>
+        <br>
+        <table border="1">
+            <thead>
+                <tr>
+                    <td colspan="3" class="range">Our range..</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="./public/menu/cheese.jpg" width="150"></td>
+                    <td>Margherita</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nemo quos, possimus impedit error
+                        corrupti officiis non quo aspernatur, autem vel assumenda dignissimos debitis ratione voluptas
+                        veritatis blanditiis harum nihil.</td>
+                </tr>
+                <tr>
+                    <td><img src="./public/menu/pepperoni.jpg" width="150"></td>
+                    <td>Pepperoni</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nemo quos, possimus impedit error
+                        corrupti officiis non quo aspernatur, autem vel assumenda dignissimos debitis ratione voluptas
+                        veritatis blanditiis harum nihil.</td>
+                </tr>
+                <tr>
+                    <td><img src="./public/menu/hawaiian.jpg" width="150"></td>
+                    <td>Hawaiian</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nemo quos, possimus impedit error
+                        corrupti officiis non quo aspernatur, autem vel assumenda dignissimos debitis ratione voluptas
+                        veritatis blanditiis harum nihil.</td>
+                </tr>
+                <tr>
+                    <td><img src="./public/menu/spicy-chicken.jpg" width="150"></td>
+                    <td>Spicy Chicken</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nemo quos, possimus impedit error
+                        corrupti officiis non quo aspernatur, autem vel assumenda dignissimos debitis ratione voluptas
+                        veritatis blanditiis harum nihil.</td>
+                </tr>
+                <tr>
+                    <td><img src="./public/menu/veggie.jpg" width="150"></td>
+                    <td>Veggie Supreme</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nemo quos, possimus impedit error
+                        corrupti officiis non quo aspernatur, autem vel assumenda dignissimos debitis ratione voluptas
+                        veritatis blanditiis harum nihil.</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <br>
+        <hr />
+        <h3>Nothing take your fancy? <span style="color: red;">That's our bad.</span> Remember you can still make your own if you click <a
+                href="diy.html">here.</a></h3>
+        <hr />
+        <br>
+        <br>
+        <div id="order">
+            <form action="mailto:not-a-real-email@not-the-pizza-palace.com" method="POST" enctype="text/plain">
+                <fieldset>
+                    <legend>Let's order!</legend>
+                    <label for="pizza-order">What're ya having? </label>
+                    <select name="pizza-order" id="pizza-order">
+                        <option value="margherita">Margherita</option>
+                        <option value="pepperoni">Pepperoni</option>
+                        <option value="hawaiian">Hawaiian</option>
+                        <option value="spicy-chicken">Spicy Chicken</option>
+                        <option value="veggie-supreme">Veggie Supreme</option>
+                    </select><br>
+                    <label for="pizza-size" id="pizza-size">What size would you like? </label>
+                    <select name="pizza-size" id="pizza-size">
+                        <option value="personal">7" Personal</option>
+                        <option value="small">9" Small</option>
+                        <option value="medium">12" Medium</option>
+                        <option value="large">14" Large</option>
+                        <option value="x-large">16" X-Large</option>
+                    </select>
+                    <hr />
+                    <img class="delivery" src="./public/delivery.png">
+                    <h3>You're hungry and there's no time to lose. Enter your delivery and payment info and we'll do the
+                        rest.</h3>
+                    <hr />
+                    <table border="2" cellpadding="5">
+                        <thead>
+                            <tr>
+                                <td>Delivery Details</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <label for="full-name">Full Name</label>
+                                    <input type="text" name="full-name">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="email-address">Email Address</label>
+                                    <input type="email" name="email-address">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="phone-number">Phone Number</label>
+                                    <input type="text" name="email-address">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="address">Address</label><br>
+                                    <textarea name="address" id="address" cols="35" rows="5"></textarea>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    <table border="2" cellpadding="5">
+                        <thead>
+                            <tr>
+                                <td>Card Info</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <label for="card-number">Card Number</label>
+                                    <input type="text" name="card-number">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="phone-number">CVV</label>
+                                    <input type="password" name="email-address" placeholder="123">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="expiry-date">Expiry Date</label><br>
+                                    <input type="date" name="expiry-date" id="expiry-date">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <hr />
+                    <label for="cash-on-delivery">Cash on Delivery?</label>
+                    <input type="checkbox" name="cash-on-delivery" id="cash-on-delivery">
+                </fieldset>
+                <hr />
+                <button type="submit">Submit order!</button>
+            </form>
+        </div>
+
+    </center>
+</body>
+
+</html>

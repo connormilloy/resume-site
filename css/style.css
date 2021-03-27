@@ -1,0 +1,39 @@
+body{
+    background: url("https://www.toptal.com/designers/subtlepatterns/patterns/symphony.png");
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+img{
+    border-radius: 50%;
+}
+
+h1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.nav li{
+    list-style-type: none;
+    display: inline;
+    padding: 10px;
+}
+
+a:hover{
+    color: red;
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.navbar{
+    background-color: rgba(12, 104, 180, 0.5)
+}
+
+.resume, #lorem-block{
+    border: 2px dashed black;
+}
+
+.resume div{
+    padding: 10px;
+}

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Pizza Palace</title>
+</head>
+
+
+<body>
+    <center>
+        <a href="index.html"><img src="./public/logo.png" width="400"></a>
+        <h1>Make Your Own</h1>
+        <h3>Pick whatever you like, because you're worth it.</h3>
+        <br>
+        <form action="mailto:notarealemail@not-the-pizza-palace.com" method="POST" enctype="text/plain">
+            <fieldset>
+                <legend>The Basics</legend>
+                <label for="pizza-size" id="pizza-size">What size would you like? </label>
+                <select name="pizza-size" id="pizza-size">
+                    <option value="personal">7" Personal</option>
+                    <option value="small">9" Small</option>
+                    <option value="medium">12" Medium</option>
+                    <option value="large">14" Large</option>
+                    <option value="x-large">16" X-Large</option>
+                </select>
+                <br>
+                <br>
+                <label for="sauce-type">Time for the saucy bit, what base would you like? </label>
+                <input type="radio" name="sauce-type" id="tomato-sauce" value="tomato-sauce">
+                <label for="tomato-sauce">Tomato</label>
+
+                <input type="radio" name="sauce-type" id="white-sauce" value="white-sauce">
+                <label for="white-sauce">White</label>
+
+                <input type="radio" name="sauce-type" id="bbq-sauce" value="bbq-sauce">
+                <label for="bbq-sauce">BBQ</label>
+                <br>
+                <br>
+                <label for="stuffed-crust">Stuffed Crust? You know you want to. </label>
+                <input type="checkbox" name="stuffed-crust" id="stuffed-crust">
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <legend>The Good Stuff</legend>
+                <h3>Toppings</h3>
+                <table border="1" cellspacing="5" cellpadding="5">
+                    <thead>
+                        <tr>
+                            <td bgcolor="#8cff66">The Good</td>
+                            <td bgcolor="#ff6666">The Bad</td>
+                            <td bgcolor="#ffe066">The Ugly</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="pepperoni" id="pepperoni">
+                                <label for="pepperoni">Pepperoni</label>
+                            </td>
+                            <td>
+                                <input type="checkbox" name="rocket" id="rocket">
+                                <label for="rocket">Rocket</label>
+                            </td>
+                            <td>
+                                <input type="checkbox" name="mac-cheese" id="mac-cheese">
+                                <label for="mac-cheese">Mac 'n' Cheese</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="salami" id="salami">
+                                <label for="salami">Salami</label>
+                            </td>
+                            <td>
+                                <input type="checkbox" name="onion" id="onion">
+                                <label for="onion">Onion</label>
+                            </td>
+                            <td>
+                                <input type="checkbox" name="haggis" id="haggis">
+                                <label for="haggis">Haggis</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="ground-beef" id="ground-beef">
+                                <label for="ground-beef">Ground Beef</label>
+                            </td>
+                            <td>
+                                <input type="checkbox" name="peppers" id="peppers">
+                                <label for="peppers">Peppers</label>
+                            </td>
+                            <td>
+                                <input type="checkbox" name="pulled-pork" id="pulled-pork">
+                                <label for="pulled-pork">Pulled Pork</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="bacon" id="bacon">
+                                <label for="bacon">Bacon</label>
+                            </td>
+                            <td>
+                                <input type="checkbox" name="sweetcorn" id="sweetcorn">
+                                <label for="sweetcorn">Sweetcorn</label>
+                            </td>
+                            <td>
+                                <input type="checkbox" name="pineapple" id="pineapple">
+                                <label for="pineapple">Pineapple</label>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <table cellpadding="10">
+                    <tr>
+                        <td><img src="./public/small/cheese.png" width="150"></td>
+                        <td><img src="./public/small/pepperoni.png" width="150"></td>
+                        <td><img src="./public/small/veggie.png" width="150"></td>
+                        <td><img src="./public/small/chicken.png" width="150"></td>
+                        <td><img src="./public/small/hawaiian.png" width="150"></td>
+                    </tr>
+                </table>
+                <hr />
+                <label for="extra-cheese">Extra Cheese? Go on, you deserve it. </label>
+                <input type="checkbox" name="extra-cheese" id="extra-cheese">
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>The Boring Stuff</legend>
+                <table border="2" cellpadding="5">
+                    <thead>
+                        <tr>
+                            <td>Delivery Details</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <label for="full-name">Full Name</label>
+                                <input type="text" name="full-name">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="email-address">Email Address</label>
+                                <input type="email" name="email-address">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="phone-number">Phone Number</label>
+                                <input type="text" name="email-address">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="address">Address</label><br>
+                                <textarea name="address" id="address" cols="35" rows="5"></textarea>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <table border="2" cellpadding="5">
+                    <thead>
+                        <tr>
+                            <td>Card Info</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                         <tr>
+                            <td>
+                                <label for="card-number">Card Number</label>
+                                <input type="text" name="card-number">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="phone-number">CVV</label>
+                                <input type="password" name="email-address" placeholder="123">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="expiry-date">Expiry Date</label><br>
+                                <input type="date" name="expiry-date" id="expiry-date">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <hr />
+                <label for="cash-on-delivery">Cash on Delivery?</label>
+                <input type="checkbox" name="cash-on-delivery" id="cash-on-delivery">
+            </fieldset>
+            <hr />
+            <button type="submit">Submit order!</button>
+        </form>
+    </center>
+</body>
+
+</html>
